@@ -1,1 +1,5 @@
-.w-test { background-color: pink; }
+body { background-color: #7BB4F7; }
+
+.main { max-width: 800px; padding: 2em; margin: 0 auto; }
+
+.photo-container { position: relative; float: right; width: 320px; }

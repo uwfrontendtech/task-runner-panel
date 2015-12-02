@@ -22,6 +22,39 @@
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
+	"\/dist\/images\/boats.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 113784,
+		"inputAbbreviatedPath": "\/dist\/images\/boats.png",
+		"outputAbbreviatedPath": "\/dist\/images\/boats.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/dist\/images\/islands.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 89384,
+		"inputAbbreviatedPath": "\/dist\/images\/islands.png",
+		"outputAbbreviatedPath": "\/dist\/images\/islands.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/dist\/images\/south.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 92096,
+		"inputAbbreviatedPath": "\/dist\/images\/south.png",
+		"outputAbbreviatedPath": "\/dist\/images\/south.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/index.html": {
 		"fileType": 8192,
 		"ignore": 0,

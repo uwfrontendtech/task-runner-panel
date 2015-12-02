@@ -9,22 +9,30 @@
     </head>
 
     <body>
-        <div class="w-test">
-            <h1>Is the section block working</h1>
-            <p>Cupcake ipsum dolor. Sit amet sweet candy canes applicake. Souffle cotton candy icing cupcake ice cream fruitcake jelly beans wypas danish. Applicake lollipop caramels liquorice toffee. Jelly caramels wafer cheesecake chupa chups bonbon jujubes muffin. Brownie icing donut biscuit jelly powder ice cream. Chupa chups jelly beans jelly-o brownie cookie sweet danish lemon drops. Cotton candy lollipop lollipop cheesecake souffle.</p>
+        <main class="main" role="main" aria-labelledy="main-title"> 
+        <h1 id="main-title">Codekit demo page</h1>
+        <figure class="photo-container">
+          <img src="dist/images/boats.png" alt="Boats at Deer Harbor"  width="300" height="225" />  
+          <figcaption>Deer Harbor, Orcas Island</figcaption>
+        </figure>
+
+
+            <p>The following are instructions on how to set up this project in Codekit. For more tutorials see the <a href="https://incident57.com/codekit/videos.html">Codekit video page</a>.</p>
 
             <ol>
                 <li>Open Codekit </li>
                 <li>Drag your project folder into Code Kit. Be sure to drop into the Project section rather than the framework section.</li>
-                <li>Go to project settings > languages:
+                <li>Sass setup:
                     <ol>
-                        <li>Choose Sass</li>
+                        <li>Project > languages > Choose Sass</li>
                         <li>Output Style: Compact or compress</li>
                         <li>The Output Folder: "To this folder" and change the path/name to ../dist</li>
                         <li>Change Name The Output File to *-min.css</li>
                     </ol>
+                </li>
+                <li>Javascript setup:
                     <ol>
-                        <li>Choose Javascript</li>
+                        <li>Project > languages > Choose Javascript</li>
                         <li>Check Syntax With: JSHint</li>
                         <li>Output Style: Minified</li>
                         <li>The Output Folder: "To this folder" and change the path/name to ../dist</li>
@@ -36,10 +44,9 @@
             </ol>
 
 
-    <a href="http://msu.edu">test link</a>
 
-            <img src="http://lorempixel.com/g/400/200/cats" alt="" width="400" height="200" />
-        </div>
+
+        </main>
 
         <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
         <script src="dist/codekit-demo-min.js"></script>
