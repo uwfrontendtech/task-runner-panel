@@ -1,0 +1,15 @@
+.logo {
+  border: 1px dashed blue;
+}
+
+.navbar {
+  border: 1px dashed green;
+}
+
+.left {
+  border: 1px dashed purple;
+}
+
+.right {
+  border: 1px dashed orange;
+}
