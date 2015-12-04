@@ -1,0 +1,20 @@
+$blue: #00f;
+$green: #0f0;
+$purple: purple;
+$orange: orange;
+
+.logo {
+  border: 1px dashed $blue;
+}
+
+.navbar {
+  border: 1px dashed $green;
+}
+
+.left {
+  border: 1px dashed $purple;
+}
+
+.right {
+  border: 1px dashed $orange;
+}
