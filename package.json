@@ -21,6 +21,7 @@
   },
   "homepage": "https://github.com/uwfrontendtech/task-runner-panel#readme",
   "devDependencies": {
+    "del": "^2.1.0",
     "eslint-config-eslint": "^1.0.1",
     "gulp": "^3.9.0",
     "gulp-eslint": "^1.1.1",

@@ -3,11 +3,17 @@ var gulp = require('gulp');
 var uglify = require('gulp-uglify');
 var eslint = require('gulp-eslint');
 var sass = require('gulp-sass');
+var del = require('del');
 
 gulp.task('copy', function() {
   gulp.src('index.html')
     .pipe(gulp.dest('dist'));
-})
+});
+
+gulp.task('clean', function() {
+  // You can use multiple globbing patterns as you would with `gulp.src`
+  return del(['dist']);
+});
 
 gulp.task('lint', function() {
   return gulp.src(['**/*.js','!node_modules/**','!dist/**'])
