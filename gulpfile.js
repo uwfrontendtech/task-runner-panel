@@ -4,6 +4,11 @@ var uglify = require('gulp-uglify');
 var eslint = require('gulp-eslint');
 var sass = require('gulp-sass');
 
+gulp.task('copy', function() {
+  gulp.src('index.html')
+    .pipe(gulp.dest('dist'));
+})
+
 gulp.task('lint', function() {
   return gulp.src(['**/*.js','!node_modules/**','!dist/**'])
     .pipe(eslint({
@@ -16,7 +21,7 @@ gulp.task('lint', function() {
 gulp.task('compress', function() {
   return gulp.src('scripts/*.js')
     .pipe( uglify() )
-    .pipe( gulp.dest('dist') );
+    .pipe( gulp.dest('dist/scripts') );
 });
 
 gulp.task('sass', function () {
@@ -29,8 +34,8 @@ gulp.task('sass:watch', function () {
   gulp.watch('./styles/**/*.scss', ['sass']);
 });
 
-gulp.task('default', ['lint', 'compress', 'sass'], function() {
+gulp.task('default', ['lint', 'copy', 'compress', 'sass'], function() {});
 
-gulp.watch(['scripts/**/*.js','styles/**/*.scss'],['default']);
-
+gulp.task('watch', function() {
+  gulp.watch(['scripts/**/*.js','styles/**/*.scss'],['default']);
 });
