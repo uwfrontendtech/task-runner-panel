@@ -1,7 +1,7 @@
 {
   "name": "task-runner-panel",
   "version": "1.0.0",
-  "description": "task runner example for gulp",
+  "description": "task runner example for brunch",
   "main": "live-server",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -11,7 +11,7 @@
     "url": "git+https://github.com/uwfrontendtech/task-runner-panel.git"
   },
   "keywords": [
-    "gulp",
+    "brunch",
     "uw"
   ],
   "author": "Ivan Storck",
@@ -21,11 +21,6 @@
   },
   "homepage": "https://github.com/uwfrontendtech/task-runner-panel#readme",
   "devDependencies": {
-    "del": "^2.1.0",
-    "eslint-config-eslint": "^1.0.1",
-    "gulp": "^3.9.0",
-    "gulp-eslint": "^1.1.1",
-    "gulp-sass": "^2.1.0",
-    "gulp-uglify": "^1.5.1"
+    "eslint-config-eslint": "^1.0.1"
   }
 }
