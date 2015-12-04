@@ -1,5 +1,8 @@
 module.exports = function(grunt) {
 
+  // Load Stuff
+  require('load-grunt-tasks')(grunt);
+
   // Configure Stuff
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
@@ -16,7 +19,13 @@ module.exports = function(grunt) {
     },
 
     jshint: {
-      options: { },
+      options: {
+        "curly": true,
+        "eqnull": true,
+        "eqeqeq": true,
+        "undef": true,
+        "node": true
+      },
       all: [
         'js/**/*.js'
       ]
@@ -25,7 +34,7 @@ module.exports = function(grunt) {
     uglify: {
       dev: {
         files: {
-          'main.min.js': [
+          'dist/main.min.js': [
             'js/main.js'
           ]
         }
@@ -38,27 +47,20 @@ module.exports = function(grunt) {
           style: 'compressed'
         },
         files: {
-          'main.min.css': 'scss/main.scss'
+          'dist/main.min.css': 'scss/main.scss'
         }
       }
     }
-
   });
 
   // Load Stuff
-  grunt.loadNpmTasks('grunt-contrib-watch');
-  grunt.loadNpmTasks('grunt-sass');
-  grunt.loadNpmTasks('grunt-contrib-jshint');
-  grunt.loadNpmTasks('grunt-contrib-uglify');
-
+  // grunt.loadNpmTasks('grunt-contrib-watch');
+  // grunt.loadNpmTasks('grunt-sass');
+  // grunt.loadNpmTasks('grunt-contrib-jshint');
+  // grunt.loadNpmTasks('grunt-contrib-uglify');
 
   // Register Tasks
-  grunt.registerTask('build', [
-    'jshint',
-    'uglify',
-    'sass'
-  ]);
+  grunt.registerTask('build', [ 'jshint', 'uglify', 'sass' ]);
 
   grunt.registerTask('default', ['watch']);
-
 };

@@ -1,7 +1,15 @@
 $color-primary: steelblue;
+$color-link: maroon;
+$spacer: 2rem;
 
-body {
-	background: white;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+	text-align: center;
 }
 
 h1,
@@ -14,7 +22,7 @@ h6 {
 }
 
 a {
-	color: red;
+	color: $color-link;
 	&:hover,
 	&:focus {
 		color: $color-primary;

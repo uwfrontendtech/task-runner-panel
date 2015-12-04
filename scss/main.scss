@@ -1,2 +1,12 @@
-@import 'partial';
-@import 'another-partial';
+//
+// Vendor
+// ------
+@import 'vendor/normalize';
+@import 'vendor/skeleton';
+
+//
+// Components
+// ----------
+@import 'components/body';
+@import 'components/typography';
+@import 'components/image';
