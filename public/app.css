@@ -1,0 +1,18 @@
+/* line 6, /Users/ivan/dev/javascript/task-runner-panel/app/styles/layout.scss */
+.logo {
+  border: 1px dashed #00f; }
+
+/* line 10, /Users/ivan/dev/javascript/task-runner-panel/app/styles/layout.scss */
+.navbar {
+  border: 1px dashed #0f0; }
+
+/* line 14, /Users/ivan/dev/javascript/task-runner-panel/app/styles/layout.scss */
+.left {
+  border: 1px dashed #800080; }
+
+/* line 18, /Users/ivan/dev/javascript/task-runner-panel/app/styles/layout.scss */
+.right {
+  border: 1px dashed #ffa500; }
+
+
+/*# sourceMappingURL=app.css.map*/

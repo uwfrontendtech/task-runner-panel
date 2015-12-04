@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Gulp Demo</title>
+  <link rel="stylesheet" href="vendor/skeleton/css/normalize.css">
+  <link rel="stylesheet" href="vendor/skeleton/css/skeleton.css">
+  <link rel="stylesheet" href="app.css">
+</head>
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="logo one column">Logo</div>
+      <div class="navbar eleven columns">navbar</div>
+    </div>
+    <div class="row">
+      <div class="left two-thirds column">
+        <p>Left Side content - main app</p>
+        <div id="app">
+          Content will be replaced by JS
+        </div>
+      </div>
+      <div class="right one-third column">Right Side content</div>
+    </div>
+  </div>
+  <script src="app.js"></script>
+  <script>require('scripts/application').init();</script>
+</body>
+</html>
