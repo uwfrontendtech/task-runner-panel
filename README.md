@@ -8,3 +8,4 @@ NPM Version
 * https://github.com/sass/node-sass#command-line-interface
 * http://eslint.org/docs/user-guide/command-line-interface
 * https://github.com/mishoo/UglifyJS2#usage
+* https://github.com/remy/nodemon#nodemon

@@ -6,7 +6,9 @@
   "scripts": {
     "lint": "eslint .",
     "minify": "uglifyjs js/main.js -o js/main.min.js",
-    "sass": "node-sass css/main.scss --output-style compressed > css/main.min.css"
+    "sass": "node-sass css/main.scss --output-style compressed > css/main.min.css",
+    "build": "npm run minify && npm run sass",
+    "watch": "nodemon --watch js/main.js --watch css --ext scss --exec npm run build"
   },
   "repository": {
     "type": "git",
@@ -19,7 +21,8 @@
   },
   "homepage": "https://github.com/uwfrontendtech/task-runner-panel#readme",
   "devDependencies": {
-    "eslint": "^1.10.3"
+    "eslint": "^1.10.3",
+    "nodemon": "^1.8.1"
   },
   "dependencies": {
     "node-sass": "^3.4.2",
