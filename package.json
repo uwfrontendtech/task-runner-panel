@@ -1,0 +1,28 @@
+{
+  "name": "task-runner-panel",
+  "version": "1.0.0",
+  "description": "Task Runner Panel - NPM Demo",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint .",
+    "minify": "uglifyjs js/main.js -o js/main.min.js",
+    "sass": "node-sass css/main.scss --output-style compressed > css/main.min.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/uwfrontendtech/task-runner-panel.git"
+  },
+  "author": "James Kruth",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/uwfrontendtech/task-runner-panel/issues"
+  },
+  "homepage": "https://github.com/uwfrontendtech/task-runner-panel#readme",
+  "devDependencies": {
+    "eslint": "^1.10.3"
+  },
+  "dependencies": {
+    "node-sass": "^3.4.2",
+    "uglify-js": "^2.6.1"
+  }
+}
