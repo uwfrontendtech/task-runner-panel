@@ -32,7 +32,7 @@ module.exports = function(grunt) {
     },
 
     uglify: {
-      dev: {
+      build: {
         files: {
           'dist/main.min.js': [
             'js/main.js'
@@ -42,9 +42,9 @@ module.exports = function(grunt) {
     },
 
     sass: {
-      dev: {
+      build: {
         options: {
-          style: 'compressed'
+          outputStyle: 'compressed'
         },
         files: {
           'dist/main.min.css': 'scss/main.scss'
